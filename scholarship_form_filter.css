@@ -1,0 +1,24 @@
+.output-box {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}

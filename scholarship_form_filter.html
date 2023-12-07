@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Form</title>
+    <link rel="stylesheet" href="scholarship_form_filter_style_form.css">
+</head>
+<body>
+    <section class="container">
+        <header>Scholarship Form</header>
+              <form action="scholarship_form_filter.php" class="form" method="post">
+            <div class="input-box">
+                <label>Age</label>
+                <input type="number" name="age" placeholder="Enter your age">
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" value="male" checked>
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" value="female">
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" value="not-specified">
+                        <label for="check-other">Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Education</label>
+                <div class="select-box">
+                    <select name="education">
+                        <option hidden>Select</option>
+                        <option value="Below 10th">Below 10th</option>
+                        <option value="10th">10th</option>
+                        <option value="12th">12th</option>
+                        <option value="Graduation">Graduation</option>
+                        <option value="Post Graduation">Post Graduation</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="MBBS">MBBS</option>
+                        <option value="Diploma">Diploma</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Percentage</label>
+                <div class="select-box">
+                    <select name="percentage">
+                        <option hidden>Select</option>
+                        <option value="50% - 60%">50% - 60%</option>
+                        <option value="60% - 70%">60% - 70%</option>
+                        <option value="70% - 80%">70% - 80%</option>
+                        <option value="80% - 90%">80% - 90%</option>
+                        <option value="Above 90%">Above 90%</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Caste</label>
+                <div class="select-box">
+                    <select name="caste">
+                        <option hidden>Select</option>
+                        <option value="General">General</option>
+                        <option value="OBC">OBC</option>
+                        <option value="SC">SC</option>
+                        <option value="ST">ST</option>
+                        <option value="PWD">PWD</option>
+                        <option value="PVTG">PVTG</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Area</label>
+                <div class="select-box">
+                    <select name="area">
+                        <option hidden>Select</option>
+                        <option value="Urban">Urban</option>
+                        <option value="Rural">Rural</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Belong to minorities</label>
+                <div class="select-box">
+                    <select name="belongToMinorities">
+                        <option hidden>Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Belong to BPL Category</label>
+                <div class="select-box">
+                    <select name="bplCategory">
+                        <option hidden>Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Family/Guardian Income</label>
+                <input type="number" name="income" placeholder="Income">
+            </div>
+            <div class="input-box">
+                <label>Physically Challenged</label>
+                <div class="select-box">
+                    <select name="physicallyChallenged">
+                        <option hidden>Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
+
